@@ -4,6 +4,8 @@
 
 body {
     background: url(images/SUGARSAN_BG.png) fixed center;
+    width: 1080px;
+    margin: 0 auto;
 }
 .full {
     width: 1024px;
