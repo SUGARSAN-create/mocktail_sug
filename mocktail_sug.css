@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+*,*::before,*::after{box-sizing:border-box}html{-moz-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none}body,h1,h2,h3,h4,p,figure,blockquote,dl,dd{margin:0}ul[role='list'],ol[role='list']{list-style:none}body{min-height:100vh;line-height:1.5}h1,h2,h3,h4,button,input,label{line-height:1.1}h1,h2,h3,h4{text-wrap:balance}a:not([class]){text-decoration-skip-ink:auto;color:currentColor}img,picture{max-width:100%;display:block}input,button,textarea,select{font:inherit}textarea:not([rows]){min-height:10em}:target{scroll-margin-block:5ex}
+
+body {
+    background: url(images/SUGARSAN_BG.png) fixed center;
+}
+.full {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.titlebox {
+    margin-top: 8px;
+    width: 100%;
+    height: 80px;
+    background-color: #80ff80cc;
+    border-radius: 16px;
+    text-align: center;
+}
+.title {
+    font-size: 48px;
+    color: #ffffff;
+    transform: translate(0px,4px);
+}
+.allowbox {
+    width: 27px;
+    height: 32px;
+    transform: translate(40px,-48px);
+}
+.allow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 0 16px 27px;
+    border-color: transparent transparent transparent #ffffff;
+    transition: transform 0.5s;
+}
+.titlebox.open .allow {
+    transform: rotate(90deg);
+}
+
+.in {
+    display: none;
+}
+
+.kanabox {
+    margin-top: 8px;
+    width: 100%;
+    height: 64px;
+    background-color: #000000cc;
+    border-radius: 16px;
+    text-align: center;
+    align-content: center;
+}
+.kana {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.databox01 {
+    margin-top: 8px;
+    width: 100%;
+    height: 64px;
+    display: flex;
+}
+.databox02 {
+    margin-top: 8px;
+    width: 100%;
+    height: 112px;
+    display: flex;
+}
+.databox03 {
+    margin-top: 8px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+}
+.databox09 {
+    margin-top: 8px;
+    width: 100%;
+    height: 448px;
+    display: flex;
+    align-items: center;
+}
+
+.datatitle {
+    width: 15%;
+    height: 100%;
+    background-color: #ff80ffcc;
+    border-radius: 16px 0 0 16px;
+    text-align: center;
+    align-content: center;
+}
+.data {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.exbox {
+    width: 85%;
+    height: 100%;
+    background-color: #ffffffcc;
+    border-radius: 0 16px 16px 0 ;
+    align-content: center;
+}
+.ex {
+    font-size: 32px;
+    color: #000000;
+    margin-left: 16px;
+}
